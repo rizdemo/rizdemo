@@ -1,7 +1,7 @@
 {
   "name": "demo",
   "version": "0.0.0-semantically-released",
-  "description": "A desdfsddfsdfdmsdo of using commitizen, travis and semantic release",
+  "description": "A demo of using commitizen, travis and semantic release",
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
