@@ -1,14 +1,15 @@
 {
   "name": "demo",
-  "version": "1.0.0",
   "description": "A demo of using commitizen, travis and semantic release",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rizdemo/rizdemo.git"
+    "url": "https://github.com/rizdemo/rizdemo.git"
   },
   "keywords": [
     "demo"
@@ -18,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/rizdemo/rizdemo/issues"
   },
-  "homepage": "https://github.com/rizdemo/rizdemo#readme"
+  "homepage": "https://github.com/rizdemo/rizdemo#readme",
+  "devDependencies": {
+    "chai": "3.3.0",
+    "commitizen": "1.0.5",
+    "cz-conventional-changelog": "1.1.4",
+    "mocha": "2.3.3",
+    "semantic-release": "^4.3.5"
+  },
+  "czConfig":{
+    "path": "node_modules/cz-conventional-changelog"
+  }
 }
